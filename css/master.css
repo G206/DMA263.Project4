@@ -130,9 +130,6 @@ h1 {
   color: #000000;
 }
 
-.container {
-	margin: 0 auto;
-}
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -185,7 +182,6 @@ h1 {
 	background-attachment: fixed;
 	background-position: center 0%;
 	background-color: #C0C0C0;
-	height: 2000px;
 }
 section[id="about"]{
 	background-color: rgba(0,0,0,.6);
@@ -202,9 +198,10 @@ section[id="portfolio"]{
 	background-color: rgba(255,255,255,.6);
 	color: black;
 }
+
 section[id="portfolio"] img{
-	max-height: 320px;
-	max-width: 370px;
+	margin: 8px auto;
+	height: 220px;
 }
 
 .carousel-showmanymoveone .carousel-control {
@@ -327,10 +324,54 @@ section[id="contact"]{
 	background-color: rgba(0,0,0,.6);
 	color: white;
 }
+
+form .formButton input{
+	height: 48px;
+	width: 128px;
+	background-color: rgba(255,255,0,.8);
+	color: black;
+	font-family: Avengeance;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+fieldset {
+	margin: 0 0 18px 0;
+}
+
+fieldset legend {
+	color: white;
+}
+
+fieldset input {
+	height: 32px;
+	display: block;
+	margin: 0 5%;
+	width: 95%;
+	background-color: rgba(255,255,255,.8);
+	color: black;
+}
+
+fieldset textarea {
+	display: block;
+	margin: 0 5%;
+	width: 95%;
+	background-color: rgba(255,255,255,.8);
+	color: black;
+}
+
 section[id="followMe"]{
 	background-color: rgba(255,255,255,.6);
 	color: black;
 }
+
+section[id="followMe"] i{
+	font-size: 3em;
+}
+
+section[id="followMe"] div{
+	text-align: center;
+}
+
 div[id="footer"]{
 	background-color: rgba(0,0,0,.6);
 	color: white;
