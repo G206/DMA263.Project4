@@ -47,7 +47,7 @@ h1 {
 	display: inline-block;
 }
 
-/* CSS from TWBS Color Site*/
+/* CSS from TWBS Color Site + Custom Modifications */
 .navbar-default {
   background-color: rgba(255,0,0,.6);
   border-color: #ffff00;
@@ -132,6 +132,11 @@ h1 {
 
 
 @media (max-width: 767px) {
+	.navbar-default .navbar-brand {
+		padding-left: 66px;
+		padding-top: 24px;
+		font-size: 1.6em;
+	}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
@@ -163,13 +168,15 @@ h1 {
 		font-size: 1.6em;
 	}
 	.navbar-custom.affix {
-		padding: 8px 0;
+		background-color: rgba(255,0,0,.3);
+		padding: 0;
 		font-size: 1.1em;
 	}
 	.navbar-custom.affix .navbar-brand {
-		font-size: 1.4em;
+		font-size: 1.6em;
+		padding-left: 66px;
+		padding-top: 24px;
 	}
-
 }
 
 #bannerWeb {
@@ -183,15 +190,12 @@ h1 {
 	background-position: center 0%;
 	background-color: #C0C0C0;
 }
+
+/* ALL CSS below is broken down by their respective sections outside the NAV area */
 section[id="about"]{
 	background-color: rgba(0,0,0,.6);
 	color: white;
-}
-
-@media (min-width: 1200px){
-	#about .container {
-		width: 970px;
-	}
+	font-size: 1.3em;
 }
 
 section[id="portfolio"]{
@@ -328,14 +332,15 @@ section[id="contact"]{
 form .formButton input{
 	height: 48px;
 	width: 128px;
-	background-color: rgba(255,255,0,.8);
+	background-color: rgba(255,255,0,.75);
 	color: black;
 	font-family: Avengeance;
-	font-weight: 600;
-	font-size: 1.1em;
+	font-weight: 500;
+	font-size: 1.3em;
+	margin: 1% 5%;
 }
 fieldset {
-	margin: 0 0 18px 0;
+	margin: 0 0 1% 0;
 }
 
 fieldset legend {
@@ -345,7 +350,7 @@ fieldset legend {
 fieldset input {
 	height: 32px;
 	display: block;
-	margin: 0 5%;
+	margin: 0 5% 1%;
 	width: 95%;
 	background-color: rgba(255,255,255,.8);
 	color: black;
